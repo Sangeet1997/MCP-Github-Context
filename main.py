@@ -107,8 +107,3 @@ def fetch_repository_content(owner, repo):
 @mcp.tool()
 def github_context(url: str):
     return fetch_github_content(url)
-
-# Example usage
-# if __name__ == "__main__":
-#     content = fetch_github_content("https://github.com/Sangeet1997/promptSQL")
-#     print(content)
