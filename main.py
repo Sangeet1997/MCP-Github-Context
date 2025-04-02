@@ -106,4 +106,8 @@ def fetch_repository_content(owner, repo):
 
 @mcp.tool()
 def github_context(url: str):
+    """Takes a github url as input and returns the context of the file(s)."""
+    """Example input:"""
+    """https://github.com/username/repo/blob/main/README.md"""
+    """https://github.com/username/repo"""
     return fetch_github_content(url)
