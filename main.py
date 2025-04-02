@@ -5,6 +5,7 @@ from urllib.parse import urlparse
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("Github Extractor")
+mcp = FastMCP("Github Extractor", dependencies=["requests"])
 
 def fetch_github_content(github_url):
     """
